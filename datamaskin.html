@@ -10,28 +10,28 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-        header body {
-            margin: 0;
-            display: grid;
-            grid-template-columns: auto 200px;
-            grid-template-rows: 100px auto 100px;
-            height: 100vh;
+
+
         }
         header h1{
             text-align: center;
             font-size: 65px;
+            margin-bottom: 10px;
         }
         header p {
-            text-align: center;
             font-size: larger;
         }
-        header{
-            grid-column: 1 / -1;
-            padding: 10px;
-            border: 2px solid white;
+        
+        header .dataTekst {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
         }
-       
+        header .bilde {
+            width: 150px;
+            margin-right: 20px;
+        }
         main{
             border: 2px solid white;
         }
@@ -46,8 +46,11 @@
 <body>
     <header id="boks1">
         <h1>Datamaskin</h1>
-        <img src="databilde.png" alt="">
+        <div class="dataTekst">
+        <img src="databilde.png" alt="Data bilde" class="bilde">
         <p>Datamaskin består av flere komponenter som er komblet sammen via et hovedkort</p>
+        </div>
+
     </header>
     <main id="boks2">Main</main>
     <footer id="boks4">Footer</footer>
