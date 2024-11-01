@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+section.grid {
+    grid-template-columns: 2fr 1fr;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(17, 114, 17);
+}
+
+main {
+    border: black solid 3px;
+}
+
+
