@@ -14,6 +14,8 @@ img{
 
 .grid {
     display: grid;
+    padding: 20px;
+    align-items: center;
 }
 
 section.grid {
@@ -22,9 +24,12 @@ section.grid {
 
 h1 {
     text-align: center;
-    color: rgb(17, 114, 17);
+    color: rgb(0, 0, 0);
+    padding: 20px;
 }
-
+body{
+    
+}
 main {
     border: black solid 3px;
 }
