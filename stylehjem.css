@@ -27,7 +27,6 @@ img {
 
 }
 
-.tekst2 {}
 
 section.grid {
     grid-template-columns: 1fr 1fr;
@@ -98,3 +97,6 @@ nav{
         text-decoration: underline;
         color: rgb(0, 76, 255);
       }
+@media screen {max-width: ;
+    
+}
