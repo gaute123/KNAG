@@ -44,7 +44,6 @@
 
 
         main .boksunderbilde {
-            border: 2px solid black;
             display: flex;
             justify-content: center;
             gap: 20px;
@@ -56,19 +55,34 @@
             background-color: lightgray;
             color: white;
             margin: 15px;
-            padding: 15px;
-            width: 400px;
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
         }
+        @media (max-width: 1130px) and (min-width: 800px){
+            main .boksunderbilde{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
 
+            }
+        }
+        @media (max-width: 799px) {
+            main .boksunderbilde{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
         main .divtekst4 {
             text-align: center;
             color: lightslategray;
-            font-size: 20px;
+            font-size: 25px;
+    
         }
 
         main .divtekst5 {
             color: black;
-            font-size: 20px;
+            font-size: 25px;
+            text-align: center;
         }
 
         footer {
@@ -76,10 +90,56 @@
             padding: 10px;
             border: 2px solid white;
         }
+        nav{
+    background-color: rgb(251, 247, 243);
+    padding: 0px;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 20px;
+    width: 100vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    }
+
+    nav ul {
+      padding: 0;
+      }
+
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+
+    nav ul li a {
+        color: black;
+        font-weight: bold;
+      }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+
+      }
+    a:hover{
+        text-decoration: underline;
+        color: green;
+      }
     </style>
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="nettadresse.html">Nettadresse</a></li>
+            <li><a href="nettverk.html">Nettverk</a></li>
+            <li><a href="index.html">Hjem</a></li>
+        </ul>
+    </nav>
     <header id="boks1">
         <h1>Datamaskin</h1>
         <div class="dataTekst">
@@ -95,6 +155,7 @@
             <div class="tekstboks">
                 <div class="divtekst4">
                     <h3>Harddisk</h3>
+                    <p>Den lagrer operativsystem programmer og datafiler og har stor lagringskapasitet. </p>
                 </div>
 
             </div>
@@ -103,6 +164,7 @@
             <div class="tekstboks">
                 <div class="divtekst5">
                     <h3>Prosessor CPU</h3>
+                    <p>I prosessoren så blir koden i et dataprogram lest og utført.</p>
                 </div>
 
             </div>
@@ -110,6 +172,7 @@
             <div class="tekstboks">
                 <div class="divtekst4">
                     <h3>Minnebrikke</h3>
+                    <p>I en minnebrikke så ligger alle de andre programmene og dataene som skal brukes lagret.</p>
                 </div>
             </div>
 
