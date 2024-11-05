@@ -43,12 +43,16 @@ h1 {
     padding: 20px;
 }
 body {
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
 }
 
 main {
     border: black solid 3px;
-    background-color: rgb(231, 236, 241);
+    background-color: rgb(255, 255, 255);
+}
+aside {
+    border: black solid 3px;
+    background-color: white;
 }
 
 header{
@@ -56,10 +60,10 @@ header{
 }
 
 nav{
-    background-color: rgb(251, 247, 243);
+    background-color: rgb(255, 255, 255);
     padding: 0px;
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
     font-size: 20px;
     width: 100vw;
     margin-right: auto;
@@ -92,5 +96,5 @@ nav{
       }
     a:hover{
         text-decoration: underline;
-        color: green;
+        color: rgb(0, 76, 255);
       }
