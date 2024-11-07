@@ -89,11 +89,28 @@
             text-align: center;
         }
 
+        main .tekstboks img {
+            width: 200px;
+        }
+
         footer {
             grid-column: 1 / -1;
-            padding: 10px;
-            border: 2px solid white;
+            padding: 0 border: 2px solid white;
         }
+
+        footer .OmOss {
+            background-color: lightblue;
+            width: 100%;
+            padding: 10px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+
 
         nav {
             background-color: rgb(251, 247, 243);
@@ -149,7 +166,7 @@
     <header id="boks1">
         <h1>Datamaskin</h1>
         <div class="dataTekst">
-            <img src="databilde.png" alt="Data bilde" class="bilde">
+            <img src="bilder/databilde.png" alt="Data bilde" class="bilde">
             <p>Datamaskin består av flere komponenter som er komblet sammen via et hovedkort</p>
         </div>
 
@@ -160,6 +177,7 @@
 
             <div class="tekstboks">
                 <div class="divtekst4">
+                    <img src="bilder/harddisk.jpg" alt="">
                     <h3>Harddisk</h3>
                     <p>Den lagrer operativsystem programmer og datafiler og har stor lagringskapasitet. </p>
                 </div>
@@ -184,6 +202,7 @@
 
             <div class="tekstboks">
                 <div class="divtekst5">
+                    <img src="" alt="">
                     <h3>Grafikkort</h3>
                     <p>Grafikkkortet tolker bilder og videoer og viser punktgrafikk på skjermen.</p>
                 </div>
@@ -192,14 +211,16 @@
             <div class="tekstboks">
                 <div class="divtekst4">
                     <h3>Nettverkskort</h3>
-                    <p>Et nettverkstkort har kommunikasjon med andre datamaskiner og enheter i omgivelsene. Kommunikasjonen er enten via (Ethernet, fiber) eller trådløst (Wi-Fi)</p>
+                    <p>Et nettverkstkort har kommunikasjon med andre datamaskiner og enheter i omgivelsene.
+                        Kommunikasjonen er enten via (Ethernet, fiber) eller trådløst (Wi-Fi)</p>
                 </div>
             </div>
 
             <div class="tekstboks">
                 <div class="divtekst5">
                     <h3>USB-port</h3>
-                    <p>Er en port på utsiden av datamaskinen som gjør at man kan koble annet digitalt utstyr på datamaskinen.</p>
+                    <p>Er en port på utsiden av datamaskinen som gjør at man kan koble annet digitalt utstyr på
+                        datamaskinen.</p>
                 </div>
             </div>
 
@@ -208,7 +229,17 @@
 
 
     </main>
-    <footer id="boks4">Footer</footer>
+
+    <footer id="boks4">
+        <div class="OmOss">
+                <h3>Om oss</h3>
+                <p>Vi er 4 elever fra Nadderud vgs som har funnet informasjon fra (kode 1) informasjonsteknologi 1 boka.
+                </p>
+
+        </div>
+
+
+    </footer>
 
 
 
