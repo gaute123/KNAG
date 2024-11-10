@@ -91,6 +91,7 @@
 
         main .tekstboks img {
             width: 200px;
+            height: 100px;
         }
 
         footer {
@@ -100,17 +101,30 @@
 
         footer .OmOss {
             background-color: whitesmoke;
+        }
+
+        footer .OmOss .tekst1 {
+
             width: 100%;
             padding: 10px;
-            height: 300px;
+            height: 120px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
         }
-        
-        
+
+        footer .OmOss .tekst2 {}
+
+        footer #kontakt {
+            padding: 10px;
+        }
+        footer .footerbilde {
+            height: 200px;
+        }
+
+
 
 
         nav {
@@ -237,15 +251,28 @@
 
     <footer id="boks4">
         <div class="OmOss">
-
+            <div class="tekst1">
                 <h3>Om oss</h3>
                 <p>Vi er 4 elever fra Nadderud vgs som har funnet informasjon fra (kode 1) informasjonsteknologi 1 boka.
                 </p>
-                <p id="kontakt">kontaktinformasjon: </p>
+            </div>
+            <div class="tekst2">
+                <p id="kontakt">kontaktinformasjon:
+                    <br>
+                    mail: noathehacker@gmail.com
+                    <br>
+                    tlf nr:
+                    <br>
+                    kontor:
+                </p>
+            </div>
 
         </div>
+        <div class="footerbilde">
+            <img src="bilder/footerbilde.jpg" alt="">
+        </div>
         <div>
-    
+
         </div>
 
 
