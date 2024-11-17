@@ -31,6 +31,7 @@
             align-items: center;
             justify-content: center;
             padding: 20px;
+            text-align: center;
         }
 
         header .bilde {
@@ -94,6 +95,63 @@
             height: 100px;
         }
 
+        aside {
+            background-color: antiquewhite;
+        }
+
+
+        aside h2 {
+            text-align: center;
+        }
+
+
+
+
+        .bildeMedTekst {
+            text-align: center;
+            margin: 100px 0;
+        }
+
+        .bildeVenstre {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 50px;
+        }
+
+        .bildeVenstre img,
+        .bildeHoyre img {
+            width: 500px;
+        }
+
+        .tekstHoyre {
+            font-size: 25px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .tekstHoyre ul,
+        .tekstVenstre ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .tekstVenstre {
+            font-size: 25px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: right;
+        }
+
+        .bildeHoyre {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 50px;
+
+        }
+
+
+
         footer {
             grid-column: 1 / -1;
             padding: 0 border: 2px solid white;
@@ -119,9 +177,6 @@
 
         footer #kontakt {
             padding: 10px;
-        }
-        footer .footerbilde {
-            height: 200px;
         }
 
 
@@ -171,22 +226,23 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="boks1">
         <ul>
             <li><a href="nettadresse.html">Nettadresse</a></li>
             <li><a href="nettverk.html">Nettverk</a></li>
             <li><a href="index.html">Hjem</a></li>
         </ul>
     </nav>
-    <header id="boks1">
+    <header id="boks2">
         <h1>Datamaskin</h1>
         <div class="dataTekst">
             <img src="bilder/databilde.png" alt="Data bilde" class="bilde">
-            <p>Datamaskin består av flere komponenter som er komblet sammen via et hovedkort</p>
+            <p>Datamaskin består av flere komponenter som er komblet sammen via et hovedkort. Dette er det en datamaskin
+                består av: </p>
         </div>
 
     </header>
-    <main id="boks2">
+    <main id="boks3">
         <div class="boksunderbilde">
 
 
@@ -194,7 +250,6 @@
                 <div class="divtekst4">
                     <img src="bilder/harddisk.jpg" alt="">
                     <h3>Harddisk</h3>
-                    <p>Den lagrer operativsystem programmer og datafiler og har stor lagringskapasitet. </p>
                 </div>
 
             </div>
@@ -204,7 +259,6 @@
                 <div class="divtekst5">
                     <img src="bilder/cpu.jpg" alt="">
                     <h3>Prosessor CPU</h3>
-                    <p>I prosessoren så blir koden i et dataprogram lest og utført.</p>
                 </div>
 
             </div>
@@ -213,7 +267,6 @@
                 <div class="divtekst4">
                     <img src="bilder/minnebrikke.jpg" alt="">
                     <h3>Minnebrikke</h3>
-                    <p>I en minnebrikke så ligger alle de andre programmene og dataene som skal brukes lagret.</p>
                 </div>
             </div>
 
@@ -221,7 +274,6 @@
                 <div class="divtekst5">
                     <img src="bilder/grafikkkort.jpg" alt="">
                     <h3>Grafikkort</h3>
-                    <p>Grafikkkortet tolker bilder og videoer og viser punktgrafikk på skjermen.</p>
                 </div>
             </div>
 
@@ -229,8 +281,6 @@
                 <div class="divtekst4">
                     <img src="bilder/nettverkskort.jpg" alt="">
                     <h3>Nettverkskort</h3>
-                    <p>Et nettverkstkort har kommunikasjon med andre datamaskiner og enheter i omgivelsene.
-                        Kommunikasjonen er enten via (Ethernet, fiber) eller trådløst (Wi-Fi)</p>
                 </div>
             </div>
 
@@ -238,18 +288,103 @@
                 <div class="divtekst5">
                     <img src="bilder/usbport.jpg" alt="">
                     <h3>USB-port</h3>
-                    <p>Er en port på utsiden av datamaskinen som gjør at man kan koble annet digitalt utstyr på
-                        datamaskinen.</p>
                 </div>
             </div>
 
 
         </div>
-
-
     </main>
 
-    <footer id="boks4">
+    <aside id="boks4">
+
+        <div class="overskrift">
+            <h2>Hva gjør egentlig de ulike komponentene?</h2>
+        </div>
+
+        <div class="bildeMedTekst">
+            <div class="bildeVenstre">
+                <img src="bilder/harddisk.jpg" />
+            </div>
+
+            <div class="tekstHoyre">
+                <div class="gjennomsiktig-boks">
+                    <h4>Harddisk</h4>
+                    <p>Den lagrer operativsystem programmer og datafiler og har stor lagringskapasitet.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bildeMedTekst">
+            <div class="tekstVenstre">
+                <div class="gjennomsiktig-boks">
+                    <h4>Prosessor</h4>
+                    <p>I prosessoren så blir koden i et dataprogram lest og utført</p>
+                </div>
+            </div>
+            <div class="bildeHoyre">
+                <img src="bilder/cpu.jpg" />
+            </div>
+        </div>
+
+        <div class="bildeMedTekst">
+            <div class="bildeVenstre">
+                <img src="bilder/minnebrikke.jpg">
+            </div>
+            <div class="tekstHoyre">
+                <div class="gjennomsiktig-boks">
+                    <h4>Minnebrikke</h4>
+                    <p>I en minnebrikke så ligger alle de andre programmene og dataene som skal brukes lagret</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bildeMedTekst">
+            <div class="tekstVenstre">
+                <div class="gjennomsiktig-boks">
+                    <h4>Grafikkkort</h4>
+                    <p>Grafikkkortet tolker bilder og videoer og viser punktgrafikk på skjermen</p>
+                </div>
+            </div>
+            <div class="bildeHoyre">
+                <img src="bilder/grafikkkort.jpg" />
+            </div>
+        </div>
+
+        <div class="bildeMedTekst">
+            <div class="bildeVenstre">
+                <img src="bilder/nettverkskort.jpg">
+            </div>
+            <div class="tekstHoyre">
+                <div class="gjennomsiktig-boks">
+                    <h4>Nettverkskort</h4>
+                    <p>Et nettverkstkort har kommunikasjon med andre datamaskiner og enheter i omgivelsene.</p>
+                       <p>Kommunikasjonen er enten via (Ethernet, fiber) eller trådløst (Wi-Fi)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bildeMedTekst">
+            <div class="tekstVenstre">
+                <div class="gjennomsiktig-boks">
+                    <h4>USB-port</h4>
+                    <p>Er en port på utsiden av datamaskinen som gjør at man kan koble annet digitalt utstyr på
+                        datamaskinen</p>
+                </div>
+            </div>
+            <div class="bildeHoyre">
+                <img src="bilder/usbport.jpg" />
+            </div>
+        </div>
+
+
+
+
+
+    </aside>
+
+
+    <footer id="boks5">
         <div class="OmOss">
             <div class="tekst1">
                 <h3>Om oss</h3>
@@ -266,12 +401,6 @@
                     kontor:
                 </p>
             </div>
-
-        </div>
-        <div class="footerbilde">
-            <img src="bilder/footerbilde.jpg" alt="">
-        </div>
-        <div>
 
         </div>
 
