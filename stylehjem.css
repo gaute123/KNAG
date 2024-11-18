@@ -1,8 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 img {
-    width: 400px;
-    height: 225px;
-    
+    width: 100%;
 }
 
 section.grid {
@@ -15,45 +19,46 @@ section.grid2 {
 
 h1 {
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 255, 123);
     padding: 20px;
 }
+
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(184, 45, 45);
 }
 
 main {
     background-color: rgb(255, 255, 255);
 }
+
 aside {
 
     background-color: white;
 }
 
-header{
+header {
     padding-top: 20px;
-}
-
-@media(max-width: 800px){
-
 }
 
 .grid {
     display: grid;
-    grid-template-columns: 200px 200px 200px;
-    align-items: stretch;
-    justify-items: stretch;
-    align-content: stretch; 
-    justify-content: space-between;
-
-    }
-
-#boks1 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 4;
-    border-radius: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 200px;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: black;
 }
-nav{
+
+.grid>div {
+    background-size: contain;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
     background-color: rgb(255, 255, 255);
     padding: 0px;
     text-align: center;
@@ -68,27 +73,64 @@ nav{
     top: 0;
     left: 0;
     z-index: 10;
-    }
+}
 
-    nav ul {
-      padding: 0;
-      }
+nav ul {
+    padding: 0;
+}
 
-    nav ul li {
-        display: inline;
-        margin-right: 10px;
-      }
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
 
-    nav ul li a {
-        color: black;
-        font-weight: bold;
-      }
+nav ul li a {
+    color: black;
+    font-weight: bold;
+}
 
-    nav ul li a:hover {
-        text-decoration: underline;
+nav ul li a:hover {
+    text-decoration: underline;
 
-      }
-    a:hover{
-        text-decoration: underline;
-        color: rgb(0, 76, 255);
-      }
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(0, 76, 255);
+}
+
+#boks1 {
+    background-image: url("bilder/kommunikasjon8.jpeg");
+}
+
+.b2 {
+    background-image: url("bilder/kommunikasjon2.gif");
+}
+
+.b3 {
+    background-image: url("bilder/kommunikasjon3.jpg");
+}
+
+.b4 {
+    background-image: url("bilder/kommunikasjon4.png");
+}
+
+.b5 {
+    background-image: url("bilder/kommunikasjon5.png");
+}
+
+.b6 {
+    background-image: url("bilder/kommunikasjon6.gif");
+}
+
+.b7 {
+    background-image: url("bilder/kommunikasjon7.jpg");
+}
+
+.b8 {
+    background-image: url("bilder/kommunikasjon.png");
+}
+
+.b9 {
+    background-image: url("bilder/kommunikasjon9.jpg");
+}
