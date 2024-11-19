@@ -4,12 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>En nettadresse til en nettside</title>
+    <style>
+        body{
+            padding: 2px;
+            margin: 0px;
+            display: grid;
+            grid-template-columns: 1fr 2fr 500px;
+    grid-template-rows: 100px auto;
+        }
+        header{
+            grid-column: 1/4;
+            text-align: center;
+        }
+        main{
+            grid-column:1/3;
+            grid-row: 2/5;
+            margin: 10px;
+        }
+        aside{
+            grid-row: 2/5;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            padding: 7px 14px;
+            border: 2px solid black;
+        }
+        th{ 
+            text-align: left;
+            padding: 7px 14px;
+            border:2px solid black;
+            border-bottom: 4px solid black;
+        }
+        thead > tr{
+            background-color: rgb(211, 226, 239);
+        }
+        tbody > tr{
+            background-color:rgb(209, 209, 234) ;
+        }
+        table.striped > tbody >tr:nth-child(odd){
+            background-color: bisque;
+        }
+    </style>
 </head>
 <body>
     <header>
-        nav
-        
+        <div>
+        <nav><a href="index.html">tilbake til forsiden</a></nav>
+        </div>
+        <h1>En nettadresse til en nettside</h1>
     </header>
+    <main style="background-color: bisque;">
+<div>
+    <h2>Brannmur</h2>
+<p>En brannmur er et program eller en maskinvare som beskytter datamaskinen mot uønsket trafikk fra internett ved å bare slippe gjennom godkjente programmer og data. Den fungerer som en portvakt som kan forhindre virus og skadelig programvare i å nå datamaskinen din.</p>
+</div>
+<div>
+    <h2> Domener og IP-adresser</h2>
+<p>Et domene er en unik og lett-å-huske adresse for et nettsted som oversettes til en IP-adresse, en tallkode datamaskiner bruker for å finne og kommunisere med hverandre på nettet. DNS (Domain Name System) hjelper til med å oversette domenenavnet til den riktige IP-adressen slik at datamaskinen kan finne nettstedet.
+</p>
+</div>
+<div>
+    <h3>Hvordan åpne en nettside</h3>
+<ul>
+    <li> Du skriver inn adressen i nettleseren.</li>
+    <li> Ruteren i nettverket ditt sender forespørselen videre til en DNS-server.</li>
+    <li>DNS-serveren finner IP-adressen til nettstedet.</li>
+    <li> Forespørselen sendes til riktig server med denne IP-adressen.</li>
+    <li> Nettstedets server sender tilbake nettsiden til nettleseren.</li>
+    <li>Nettleseren viser innholdet på skjermen din.</li>
+</ul>
+</div>
+<div>
+    <h4>Nettadresse (URL) og protokoller</h4>
+        <p>En URL (Uniform Resource Locator) er hele adressen til et nettsted, inkludert protokollen (som HTTP eller HTTPS) og domenenavnet, hvor protokollen angir hvordan data overføres. HTTPS er en sikker versjon av HTTP som krypterer data for å beskytte mot hacking.</p>
+      
+</div>
+    </main>
+    <aside>
+<div>
+    <table class="striped">
+        <thead>
+            <tr>
+                <th>Begrep</th>
+                <th>Forklaring</th>
+                <th>Eksempel</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>URL</td>
+                <td>http:Betyr at det er en nettside på internett.</td>
+                <td>http://cappelendamundervisning.no</td>
+            </tr>
+            <tr>
+                <td>URL</td>
+                <td>https:Betyr at det er en sikker nettside på internett.</td>
+                <td>https://cappelendamundervisning.no/</td>
+            </tr>
+            <tr>
+                <td>Domene</td>
+                <td>domene er navnet på nettsiden som du skriver inn i nettleseren for å få tilgang til den.</td>
+                <td>www.cappelendammundervisning.no</td>
+            </tr>
+            <tr>
+                <td>IP-adresse</td>
+                <td>En nettverksadresse med fire grupper av tall mellom o og 225.</td>
+                <td>192.168.1.5</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    </aside>
+    <footer>
+
+    </footer>
     
 </body>
 </html>
