@@ -48,7 +48,6 @@
         main .boksunderbilde {
             display: flex;
             justify-content: center;
-            gap: 20px;
             margin-top: 100px;
         }
 
@@ -56,13 +55,13 @@
             border: 5px solid black;
             background-color: lightgray;
             color: white;
-            margin: 15px;
+            margin: 5px;
             padding: 20px 30px;
             display: flex;
             align-items: center;
         }
 
-        @media (max-width: 1130px) and (min-width: 800px) {
+        @media (max-width: 1550px) and (min-width: 800px) {
             main .boksunderbilde {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
@@ -94,6 +93,17 @@
             width: 200px;
             height: 100px;
         }
+        main .tekstboks ul li {
+            display: none;
+            list-style: none;
+        }
+        main .tekstboks:hover ul li {
+            display: list-item;
+            color: black;
+        }
+        main .tekstboks:hover {
+            cursor: pointer;
+        }
 
         aside {
             background-color: antiquewhite;
@@ -102,6 +112,7 @@
 
         aside h2 {
             text-align: center;
+            font-size: 40px;
         }
 
 
@@ -222,6 +233,33 @@
             text-decoration: underline;
             color: green;
         }
+
+
+        .header-main ul li a:hover {
+    background-color: #fff;
+    color: black;
+}
+ 
+/* Dropdown styling start */
+ 
+.header-main ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    position: absolute;
+    left: -40px;
+    transition: all ease-in-out 100ms;
+}
+ 
+.header-main ul li ul li a {
+    white-space: nowrap;
+}
+ 
+ul li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
     </style>
 </head>
 
@@ -250,6 +288,10 @@
                 <div class="divtekst4">
                     <img src="bilder/harddisk.jpg" alt="">
                     <h3>Harddisk</h3>
+                    <ul>
+                        <li>Den lagrer operativ programmer og datafiler og har stor lagringskapasitet</li>
+                    </ul>
+                </section>
                 </div>
 
             </div>
@@ -259,6 +301,9 @@
                 <div class="divtekst5">
                     <img src="bilder/cpu.jpg" alt="">
                     <h3>Prosessor CPU</h3>
+                    <ul>
+                        <li>I prosessoren så blir koden i et dataprogram lest og utført</li>
+                    </ul>
                 </div>
 
             </div>
@@ -267,6 +312,9 @@
                 <div class="divtekst4">
                     <img src="bilder/minnebrikke.jpg" alt="">
                     <h3>Minnebrikke</h3>
+                    <ul>
+                        <li>I en minnebrikke så ligger alle de andre programmene og dataene som skal brukes lagret</li>
+                    </ul>
                 </div>
             </div>
 
@@ -274,6 +322,9 @@
                 <div class="divtekst5">
                     <img src="bilder/grafikkkort.jpg" alt="">
                     <h3>Grafikkort</h3>
+                    <ul>
+                        <li>Grafikkkortet tolker bilder og videoer og viser punktgrafikk på skjermen</li>
+                    </ul>
                 </div>
             </div>
 
@@ -281,6 +332,10 @@
                 <div class="divtekst4">
                     <img src="bilder/nettverkskort.jpg" alt="">
                     <h3>Nettverkskort</h3>
+                    <ul>
+                        <li>Et nettverkstkort har kommunikasjon med andre datamaskiner og enheter i omgivelsene.</li>
+                        <li>Kommunikasjonen er enten via (Ethernet, fiber) eller trådløst (Wi-Fi)</li>
+                    </ul>
                 </div>
             </div>
 
@@ -288,101 +343,16 @@
                 <div class="divtekst5">
                     <img src="bilder/usbport.jpg" alt="">
                     <h3>USB-port</h3>
+                    <ul>
+                        <li>Er en port på utsiden av datamaskinen som gjør at man kan koble annet digitalt utstyr på
+                            datamaskinen</li>
+                    </ul>
                 </div>
             </div>
 
 
         </div>
     </main>
-
-    <aside id="boks4">
-
-        <div class="overskrift">
-            <h2>Hva gjør egentlig de ulike komponentene?</h2>
-        </div>
-
-        <div class="bildeMedTekst">
-            <div class="bildeVenstre">
-                <img src="bilder/harddisk.jpg" />
-            </div>
-
-            <div class="tekstHoyre">
-                <div class="gjennomsiktig-boks">
-                    <h4>Harddisk</h4>
-                    <p>Den lagrer operativsystem programmer og datafiler og har stor lagringskapasitet.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="bildeMedTekst">
-            <div class="tekstVenstre">
-                <div class="gjennomsiktig-boks">
-                    <h4>Prosessor</h4>
-                    <p>I prosessoren så blir koden i et dataprogram lest og utført</p>
-                </div>
-            </div>
-            <div class="bildeHoyre">
-                <img src="bilder/cpu.jpg" />
-            </div>
-        </div>
-
-        <div class="bildeMedTekst">
-            <div class="bildeVenstre">
-                <img src="bilder/minnebrikke.jpg">
-            </div>
-            <div class="tekstHoyre">
-                <div class="gjennomsiktig-boks">
-                    <h4>Minnebrikke</h4>
-                    <p>I en minnebrikke så ligger alle de andre programmene og dataene som skal brukes lagret</p>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="bildeMedTekst">
-            <div class="tekstVenstre">
-                <div class="gjennomsiktig-boks">
-                    <h4>Grafikkkort</h4>
-                    <p>Grafikkkortet tolker bilder og videoer og viser punktgrafikk på skjermen</p>
-                </div>
-            </div>
-            <div class="bildeHoyre">
-                <img src="bilder/grafikkkort.jpg" />
-            </div>
-        </div>
-
-        <div class="bildeMedTekst">
-            <div class="bildeVenstre">
-                <img src="bilder/nettverkskort.jpg">
-            </div>
-            <div class="tekstHoyre">
-                <div class="gjennomsiktig-boks">
-                    <h4>Nettverkskort</h4>
-                    <p>Et nettverkstkort har kommunikasjon med andre datamaskiner og enheter i omgivelsene.</p>
-                       <p>Kommunikasjonen er enten via (Ethernet, fiber) eller trådløst (Wi-Fi)</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="bildeMedTekst">
-            <div class="tekstVenstre">
-                <div class="gjennomsiktig-boks">
-                    <h4>USB-port</h4>
-                    <p>Er en port på utsiden av datamaskinen som gjør at man kan koble annet digitalt utstyr på
-                        datamaskinen</p>
-                </div>
-            </div>
-            <div class="bildeHoyre">
-                <img src="bilder/usbport.jpg" />
-            </div>
-        </div>
-
-
-
-
-
-    </aside>
-
 
     <footer id="boks5">
         <div class="OmOss">
