@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datamaskin</title>
+    <link rel="stylesheet" href="#stylehoved.css">
+    
 
     <style>
         * {
@@ -93,14 +95,17 @@
             width: 200px;
             height: 100px;
         }
+
         main .tekstboks ul li {
             display: none;
             list-style: none;
         }
+
         main .tekstboks:hover ul li {
             display: list-item;
             color: black;
         }
+
         main .tekstboks:hover {
             cursor: pointer;
         }
@@ -162,35 +167,76 @@
         }
 
 
-
-        footer {
-            grid-column: 1 / -1;
-            padding: 0 border: 2px solid white;
+        /* Her er css om section*/
+        :root {
+            --primary: #edede9;
+            --KARPEprimary: #ff6f61;
         }
 
-        footer .OmOss {
-            background-color: whitesmoke;
+        #footerid {
+            background-color: var(--primary);
         }
 
-        footer .OmOss .tekst1 {
-
-            width: 100%;
-            padding: 10px;
-            height: 120px;
+        .main {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .footer {
+            padding: 10px 0;
+        }
+
+        .footer-liste {
+            width: 25%;
+        }
+
+        .footer-liste h3 {
+            font-size: 1.2rem;
+            color: grey;
+            position: relative;
+            margin-bottom: 25px;
+            font-family: Arial, sans-serif;
             text-align: center;
         }
 
-        footer .OmOss .tekst2 {}
-
-        footer #kontakt {
-            padding: 10px;
+        .footer-liste h3::before {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 50px;
+            left: 0;
+            bottom: -8px;
+            background: var(--KARPEprimary);
+           
         }
 
+        .footer-liste ul li {
+            color: grey;
+            font-family: Arial, sans-serif;
+            font-size: 0.85rem;
+            margin-top: 10px;
+            
+        }
 
+        .footer-linker ul li:hover {
+            color: var(--KARPEprimary);
+            transform: scale(1.05) translateY(2px);
+            transition: .4s;
+            
+        }
+
+        .footer-linker ul li a {
+            color: white;
+            text-decoration: none;
+            
+        }
+
+        .footer-linker ul li a:hover {
+            color: var(--KARPEprimary);
+            
+        }
+
+        /*section avsluttes*/
 
 
         nav {
@@ -236,30 +282,30 @@
 
 
         .header-main ul li a:hover {
-    background-color: #fff;
-    color: black;
-}
- 
-/* Dropdown styling start */
- 
-.header-main ul li ul {
-    visibility: hidden;
-    opacity: 0;
-    display: none;
-    position: absolute;
-    left: -40px;
-    transition: all ease-in-out 100ms;
-}
- 
-.header-main ul li ul li a {
-    white-space: nowrap;
-}
- 
-ul li:hover>ul {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-}
+            background-color: #fff;
+            color: black;
+        }
+
+        /* Dropdown styling start */
+
+        .header-main ul li ul {
+            visibility: hidden;
+            opacity: 0;
+            display: none;
+            position: absolute;
+            left: -40px;
+            transition: all ease-in-out 100ms;
+        }
+
+        .header-main ul li ul li a {
+            white-space: nowrap;
+        }
+
+        ul li:hover>ul {
+            visibility: visible;
+            opacity: 1;
+            display: block;
+        }
     </style>
 </head>
 
@@ -291,7 +337,7 @@ ul li:hover>ul {
                     <ul>
                         <li>Den lagrer operativ programmer og datafiler og har stor lagringskapasitet</li>
                     </ul>
-                </section>
+                    </section>
                 </div>
 
             </div>
@@ -355,25 +401,28 @@ ul li:hover>ul {
     </main>
 
     <footer id="boks5">
-        <div class="OmOss">
-            <div class="tekst1">
-                <h3>Om oss</h3>
-                <p>Vi er 4 elever fra Nadderud vgs som har funnet informasjon fra (kode 1) informasjonsteknologi 1 boka.
-                </p>
-            </div>
-            <div class="tekst2">
-                <p id="kontakt">kontaktinformasjon:
-                    <br>
-                    mail: noathehacker@gmail.com
-                    <br>
-                    tlf nr:
-                    <br>
-                    kontor:
-                </p>
-            </div>
 
-        </div>
-
+        <section id="footerid">
+            <div class="footer">
+                <div class="main">
+                    <div class="footer-liste footer-linker">
+                        <h3>Kontakt oss</h3>
+                        <ul>
+                            <li>Mail: Noahthehacker@gmail.com</li>
+                            <li>Telefon: 920 21 526</li>
+                            <li>Kontor: Tellef Gravs Vei 139 </li>
+                        </ul>
+                    </div>
+                    <div class="footer-liste footer-linker">
+                        <h3>Om oss. Vår utvikling</h3>
+                        <ul>
+                            <li>Vi har en på gruppa som er rasist. du finner han på vårt kontor</li>
+                        </ul>
+                        <ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </footer>
 
