@@ -19,19 +19,19 @@ section.grid2 {
 
 h1 {
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 20px;
 }
 
 h2{
     text-align: center;
-    border: solid black 3px;
+    border: solid rgb(255, 255, 255) 3px;
     border-radius: 30px;
     font-size: 15px;
 }
 
 body {
-    background-color: rgb(143, 138, 132);
+    background-color: #edede9;
 }
 
 main {
@@ -40,7 +40,7 @@ main {
 
 aside {
 
-    background-color: white;
+    background-color: rgb(0, 0, 0);
 }
 
 header {
@@ -52,8 +52,8 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 200px;
     padding: 20px;
-    margin-top: ;
-    background-color: rgb(143, 138, 132);
+    margin-top: 27px;
+    background-color: rgb(0, 0, 0);
     border: solid black 2px;
 }
 
@@ -107,14 +107,6 @@ a:hover {
     color: rgb(0, 76, 255);
 }
 
-.storbakgrunn {
-    width: 100%;
-  	height: 100vh;
-  	background-size: cover;
-  	position: relative;
-    background-image: url("bilder/knag.png");
-}
-
 #boks1 {
     background-image: url("bilder/kommunikasjon8.jpeg");
 }
@@ -149,4 +141,66 @@ a:hover {
 
 .b9 {
     background-image: url("bilder/kommunikasjon9.jpg");
+}
+
+:root {
+    --primary: #000000;
+    --KARPEprimary: #ff6f61;
+}
+
+#footerid {
+    background-color: var(--primary);
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    padding: 10px 0;
+}
+
+.footer-liste {
+    width: 25%;
+}
+
+.footer-liste h3 {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin-bottom: 25px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-liste h3::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -8px;
+    background: var(--KARPEprimary);
+}
+
+.footer-liste ul li {
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+
+.footer-linker ul li:hover {
+    color: var(--KARPEprimary);
+    transform: scale(1.05) translateY(2px);
+    transition: .4s;
+}
+
+.footer-linker ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-linker ul li a:hover {
+    color: var(--KARPEprimary);
 }
