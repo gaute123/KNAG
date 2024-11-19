@@ -52,7 +52,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 200px;
     padding: 20px;
-    margin-top: ;
+    margin-top: 60px;
     background-color: rgb(143, 138, 132);
     border: solid black 2px;
 }
@@ -105,14 +105,6 @@ nav ul li a:hover {
 a:hover {
     text-decoration: underline;
     color: rgb(0, 76, 255);
-}
-
-.storbakgrunn {
-    width: 100%;
-  	height: 100vh;
-  	background-size: cover;
-  	position: relative;
-    background-image: url("bilder/knag.png");
 }
 
 #boks1 {
