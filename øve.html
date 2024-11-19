@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            background-color: blue;
+            height: 100px;
+            border: 3px solid black;
+            gap: 3px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        #boks1 {
+            background-color: greenyellow;
+            grid-row:2/4 ;
+
+        }
+
+        #boks3 {
+background-color: purple;
+grid-column:;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <div id="boks1">boks 1</div>
+        <div>boks 2</div>
+        <div id="boks3">boks 3</div>
+        <div>boks 4</div>
+        <div>boks 5</div>
+        <div>boks 6</div>
+        <div>boks 7</div>
+        <div>boks 8</div>
+
+    </div>
+
+</body>
+
+</html>
