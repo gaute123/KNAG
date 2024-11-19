@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+       :root {
+    --primary: #2a2a2a;
+    --KARPEprimary: #ff6f61;
+}
+
+#footerid {
+    background-color: var(--primary);
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    padding: 10px 0;
+}
+
+.footer-liste {
+    width: 25%;
+}
+
+.footer-liste h3 {
+    font-size: 1.2rem;
+    color: white;
+    position: relative;
+    margin-bottom: 25px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-liste h3::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -8px;
+    background: var(--KARPEprimary);
+}
+
+.footer-liste ul li {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+
+.footer-linker ul li:hover {
+    color: var(--KARPEprimary);
+    transform: scale(1.05) translateY(2px);
+    transition: .4s;
+}
+
+.footer-linker ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-linker ul li a:hover {
+    color: var(--KARPEprimary);
+}
+
+    </style>
+</head>
+<body>
+    <section id="footerid">
+        <div class="footer">
+            <div class="main">
+                <div class="footer-liste footer-linker">
+                    <h3>Kontakt oss</h3>
+                    <ul>
+                        <li>Mail: NorskeArtister@gmail.com</li>
+                        <li>Telefon: +47 123 45 678</li>
+                        <li>Adresse: Artistveien 16, 0789, Oslo</li>
+                    </ul>
+                </div>
+                <div class="footer-liste footer-linker">
+                    <h3>Eksterne linker</h3>
+                    <ul>
+                        <li><a href="https://no.wikipedia.org/wiki/Undergrunn_(musikkgruppe)">Wikipedia Undergrunn</a></li>
+                        <li><a href="https://no.wikipedia.org/wiki/T%C3%B8yen_Holding">Wikipedia Tøyen Holding</a></li>
+                        <li><a href="https://no.wikipedia.org/wiki/Karpe_(musikkgruppe)">Wikipedia Karpe</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
