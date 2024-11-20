@@ -47,7 +47,7 @@ nav{
       /* section omoss*/
 
       :root {
-        --primary: #edede9;
+        --primary: #222;
         --KARPEprimary: #ff6f61;
     }
     
@@ -55,7 +55,7 @@ nav{
         background-color: var(--primary);
     }
     
-    .main {
+    .main-footer {
         display: flex;
         flex-wrap: wrap;
     }

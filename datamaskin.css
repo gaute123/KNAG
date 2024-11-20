@@ -47,18 +47,37 @@ main .boksunderbilde {
     justify-content: center;
     padding: 100px;
     padding-bottom: 200px;
+    margin: 20px;
 }
 
 main .tekstboks {
     border: 5px solid black;
     background-color: lightgray;
-    color: white;
     margin: 5px;
     padding: 20px 30px;
     display: flex;
     align-items: center;
 }
 
+main .hovedkort {
+    border: 5px solid black;
+    background-color: lightgray;
+    padding: 20px 30px;
+    align-items: center;
+}
+main .hovedkort h2 {
+    text-align: center;
+    padding: 10 px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+main .hovedkort p {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
 @media (max-width: 1550px) and (min-width: 800px) {
     main .boksunderbilde {
         display: grid;
@@ -78,6 +97,7 @@ main .divtekst4 {
     text-align: center;
     color: black;
     font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 
 }
 
@@ -85,6 +105,7 @@ main .divtekst5 {
     color: black;
     font-size: 25px;
     text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 main .tekstboks img {
@@ -162,119 +183,6 @@ aside h2 {
 
 }
 
-
-/* Her er css om section*/
-:root {
-    --primary: #222;
-    --KARPEprimary: #ff6f61;
-}
-
-#footerid {
-    background-color: var(--primary);
-}
-
-.main {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer {
-    padding: 10px 0;
-}
-
-.footer-liste {
-    width: 25%;
-}
-
-.footer-liste h3 {
-    font-size: 1.2rem;
-    color: grey;
-    position: relative;
-    margin-bottom: 25px;
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
-
-.footer-liste h3::before {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 50px;
-    left: 0;
-    bottom: -8px;
-    background: var(--KARPEprimary);
-
-}
-
-.footer-liste ul li {
-    color: grey;
-    font-family: Arial, sans-serif;
-    font-size: 0.85rem;
-    margin-top: 10px;
-
-}
-
-.footer-linker ul li:hover {
-    color: var(--KARPEprimary);
-    transform: scale(1.05) translateY(2px);
-    transition: .4s;
-
-}
-
-.footer-linker ul li a {
-    color: white;
-    text-decoration: none;
-
-}
-
-.footer-linker ul li a:hover {
-    color: var(--KARPEprimary);
-
-}
-
-/*section avsluttes*/
-
-
-nav {
-    background-color: #222;
-    padding: 0px;
-    text-align: center;
-    border: 2px solid black;
-    font-size: 20px;
-    width: 100vw;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 0px;
-    margin-bottom: 15px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-}
-
-nav ul {
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    color: white;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-
-}
-
-a:hover {
-    text-decoration: underline;
-    color: green;
-}
 
 
 .header-main ul li a:hover {
