@@ -58,12 +58,35 @@ main .tekstboks {
     position: relative;
 }
 
-main .hovedkort {
-    border: 5px solid black;
-    background-color:rgb(28, 28, 28);
-    padding: 20px 30px;
-    align-items: center;
+
+ main .hovedkort-boks {
+    padding: 20px; 
+    background-color: rgb(28, 28, 28);
+    position: relative;
+    height: 60vh;
+
+ }
+
+main .hovedkort-boks-tekst {
+    color: white;
+    border: 3px solid lightgray;
+    border-radius: 20px;
+    padding: 20px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 50px;
     text-align: center;
+}
+main .hovedkort-boks-tekst img{
+    width: 700px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px;
 }
 main .hovedkort h2 {
     text-align: center;
@@ -138,7 +161,9 @@ main .divtekst5 {
 main .tekstboks img {
     width: 200px;
     height: 100px;
+    border-radius: 10px;
 }
+
 
 main .tekstboks ul li {
     /*
@@ -160,7 +185,7 @@ main .tekstboks:hover {
 
 aside .datamaskin-boks {
     background-color:rgb(52, 58, 64) ;
-    height: 100vh;
+    height: 80vh;
     position: relative;
 }
 aside .datamaskin-boks-tekst {
@@ -177,5 +202,6 @@ aside .datamaskin-boks-tekst {
 }
 aside .datamaskin-boks-bilde img {
     width: 700px;
+    border-radius: 20px;
 }
 
