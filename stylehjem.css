@@ -23,7 +23,7 @@ h1 {
     padding: 20px;
 }
 
-h2{
+h2 {
     text-align: center;
     border: solid rgb(255, 255, 255) 3px;
     border-radius: 30px;
@@ -41,10 +41,6 @@ main {
 aside {
 
     background-color: rgb(0, 0, 0);
-}
-
-header {
-    padding-top: 20px;
 }
 
 .grid {
@@ -203,4 +199,18 @@ a:hover {
 
 .footer-linker ul li a:hover {
     color: var(--KARPEprimary);
+}
+
+@media (width > 700px) {
+    body {
+        background-color: rgb(12, 122, 181);
+    }
+
+}
+
+@media (width < 1400px) {
+    body {
+        background-color: #ffffff;
+    }
+
 }
