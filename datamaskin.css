@@ -46,8 +46,6 @@ main .boksunderbilde {
     display: flex;
     justify-content: center;
     padding: 100px;
-    padding-bottom: 200px;
-    margin: 20px;
 }
 
 main .tekstboks {
@@ -56,20 +54,23 @@ main .tekstboks {
     margin: 5px;
     padding: 20px 30px;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 main .hovedkort {
     border: 5px solid black;
-    background-color: lightgray;
+    background-color:rgb(28, 28, 28);
     padding: 20px 30px;
     align-items: center;
+    text-align: center;
 }
 main .hovedkort h2 {
     text-align: center;
     padding: 10 px;
     padding-bottom: 20px;
     font-size: 30px;
+    color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 main .hovedkort p {
@@ -77,6 +78,7 @@ main .hovedkort p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 20px;
     padding-bottom: 10px;
+    color: white;
 }
 @media (max-width: 1550px) and (min-width: 800px) {
     main .boksunderbilde {
@@ -101,6 +103,31 @@ main .divtekst4 {
 
 }
 
+.tekstboks:hover .divbilde {
+    opacity: 0.1;
+
+    transition: opacity .3s ease-out;
+    -moz-transition: opacity .3s ease-out;
+    -webkit-transition: opacity .3s ease-out;
+    -o-transition: opacity .3s ease-out;
+}
+
+main .divtekst-beskrivelse {
+    position: absolute;
+    padding: 0px 30px;
+    opacity: 0;
+}
+
+.tekstboks:hover .divtekst-beskrivelse {
+    opacity: 1;
+
+    transition: opacity .7s ease-out;
+    -moz-transition: opacity .7s ease-out;
+    -webkit-transition: opacity .7s ease-out;
+    -o-transition: opacity .7s ease-out;
+
+}
+
 main .divtekst5 {
     color: black;
     font-size: 25px;
@@ -114,91 +141,41 @@ main .tekstboks img {
 }
 
 main .tekstboks ul li {
+    /*
     display: none;
     list-style: none;
+    */
 }
 
 main .tekstboks:hover ul li {
+    /*
     display: list-item;
     color: black;
+    */
 }
 
 main .tekstboks:hover {
-    cursor: pointer;
+    
 }
 
-aside {
-    background-color: antiquewhite;
+aside .datamaskin-boks {
+    background-color:rgb(52, 58, 64) ;
+    height: 100vh;
+    position: relative;
 }
-
-
-aside h2 {
+aside .datamaskin-boks-tekst {
+    color: white;
+    border: 3px solid lightgray;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 50px;
     text-align: center;
-    font-size: 40px;
+}
+aside .datamaskin-boks-bilde img {
+    width: 700px;
 }
 
-
-
-
-.bildeMedTekst {
-    text-align: center;
-    margin: 100px 0;
-}
-
-.bildeVenstre {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 50px;
-}
-
-.bildeVenstre img,
-.bildeHoyre img {
-    width: 500px;
-}
-
-.tekstHoyre {
-    font-size: 25px;
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-}
-
-.tekstHoyre ul,
-.tekstVenstre ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.tekstVenstre {
-    font-size: 25px;
-    display: inline-block;
-    vertical-align: top;
-    text-align: right;
-}
-
-.bildeHoyre {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 50px;
-
-}
-
-
-
-.header-main ul li a:hover {
-    background-color: #fff;
-    color: black;
-}
-
-
-
-
-.header-main ul li ul li a {
-    white-space: nowrap;
-}
-
-ul li:hover>ul {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-}
