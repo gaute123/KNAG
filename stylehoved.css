@@ -37,6 +37,8 @@ nav ul li a:hover{
 }
 /* section omoss*/
 
+/* footer omoss*/
+
 :root {
     --primary: #222;
     --KARPEprimary: #ff6f61;
@@ -104,3 +106,4 @@ nav ul li a:hover{
     color: var(--KARPEprimary);
 
 }
+/* footer omoss avsluttes*/
