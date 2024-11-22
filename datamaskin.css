@@ -1,11 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-
-}
-
+/*Her starter header*/
 header h1 {
     padding: 100px;
     text-align: center;
@@ -36,11 +29,57 @@ header .bilde {
     margin-right: 20px;
 }
 
+/*Header avsluttes*/
+
+/*Her starter main*/
 main {
     background-color: black;
 }
 
+/*Styling om hovedkort*/
+main .hovedkort-boks {
+    padding: 20px;
+    background-color: rgb(28, 28, 28);
 
+}
+
+main .hovedkort-boks-tekst {
+    color: white;
+    border: 3px solid lightgray;
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+main .hovedkort-boks-tekst img {
+    width: 700px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px;
+}
+
+main .hovedkort h2 {
+    text-align: center;
+    padding: 10 px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main .hovedkort p {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+/*Her er stylingen for komponente*/
 
 main .boksunderbilde {
     display: flex;
@@ -59,51 +98,6 @@ main .tekstboks {
     position: relative;
 }
 
-
- main .hovedkort-boks {
-    padding: 20px; 
-    background-color: rgb(28, 28, 28);
-    position: relative;
-    height: 80vh;
-
- }
-
-main .hovedkort-boks-tekst {
-    color: white;
-    border: 3px solid lightgray;
-    border-radius: 20px;
-    padding: 20px; 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    padding: 50px;
-    text-align: center;
-}
-main .hovedkort-boks-tekst img{
-    width: 700px;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-    border-radius: 20px;
-}
-main .hovedkort h2 {
-    text-align: center;
-    padding: 10 px;
-    padding-bottom: 20px;
-    font-size: 30px;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-main .hovedkort p {
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    color: white;
-}
 @media (max-width: 1550px) and (min-width: 800px) {
     main .boksunderbilde {
         display: grid;
@@ -124,7 +118,6 @@ main .divtekst4 {
     color: black;
     font-size: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-
 }
 
 .tekstboks:hover .divbilde {
@@ -181,26 +174,29 @@ main .tekstboks:hover ul li {
 }
 
 
-
+/*Styling for stasjonær pc-boks*/
 aside .datamaskin-boks {
-    background-color:rgb(52, 58, 64) ;
-    height: 80vh;
-    position: relative;
+    padding: 20px;
+    background-color: rgb(52, 58, 64);
 }
+
 aside .datamaskin-boks-tekst {
     color: white;
     border: 3px solid lightgray;
     border-radius: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    padding: 50px;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
     text-align: center;
 }
+
 aside .datamaskin-boks-bilde img {
     width: 700px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
     border-radius: 20px;
 }
 
+/*Styling for stasjonær pc-boks avsluttes*/
