@@ -41,7 +41,8 @@ body {
 }
 
 main {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(12, 122, 181);
+    margin-top: 40px;
 }
 
 aside {
@@ -57,17 +58,21 @@ aside {
     margin-top: 27px;
     background-color: rgb(0, 0, 0);
     border: solid black 2px;
+    max-width: 1000px;
+    margin: auto;
 }
 
-.grid>div {
-    background-size: contain;
-    background-position: top;
+.grid div {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
+/*
 nav {
     background-color: rgb(255, 255, 255);
     padding: 0px;
@@ -108,6 +113,7 @@ a:hover {
     text-decoration: underline;
     color: rgb(0, 76, 255);
 }
+*/
 
 #boks1 {
     background-image: url("bilder/kommunikasjon8.jpeg");
@@ -115,6 +121,17 @@ a:hover {
 
 .b2 {
     background-image: url("bilder/kommunikasjon2.gif");
+}
+
+.b2 p {
+    display: none;
+    padding: 40px 10px;
+    background-color: rgba(255,255,255, 0.5);
+    border-radius: 20px;
+}
+
+.b2:hover p {
+    display: block;
 }
 
 .b3 {
@@ -131,6 +148,7 @@ a:hover {
 
 .b6 {
     background-image: url("bilder/kommunikasjon6.gif");
+    background-size: contain;
 }
 
 .b7 {
@@ -157,10 +175,11 @@ a:hover {
 .main {
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .footer {
-    padding: 10px 0;
+    padding: 10px;
 }
 
 .footer-liste {
