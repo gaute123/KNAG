@@ -36,7 +36,7 @@ body {
 
 main {
     background-color: rgb(12, 122, 181);
-    margin-top: 40px;
+    margin-top: 70px;
     margin-bottom: 40px;
 }
 
@@ -115,65 +115,9 @@ aside {
     background-image: url("bilder/kommunikasjon9.jpg");
 }
 
-:root {
-    --primary: #000000;
-    --KARPEprimary: #ff6f61;
-}
 
-#footerid {
-    background-color: var(--primary);
-}
 
 .main {
     display: flex;
     flex-wrap: wrap;
     
-}
-
-.footer {
-    padding: 10px;
-}
-
-.footer-liste {
-    width: 25%;
-}
-
-.footer-liste h3 {
-    font-size: 1.2rem;
-    color: rgb(255, 255, 255);
-    position: relative;
-    margin-bottom: 25px;
-    font-family: Arial, sans-serif;
-}
-
-.footer-liste h3::before {
-    position: absolute;
-    height: 2px;
-    width: 50px;
-    left: 0;
-    bottom: -8px;
-    background: var(--KARPEprimary);
-}
-
-.footer-liste ul li {
-    color: rgb(255, 255, 255);
-    font-family: Arial, sans-serif;
-    font-size: 0.85rem;
-    margin-top: 10px;
-}
-
-.footer-linker ul li:hover {
-    color: var(--KARPEprimary);
-    transform: scale(1.05) translateY(2px);
-    transition: .4s;
-}
-
-.footer-linker ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-linker ul li a:hover {
-    color: var(--KARPEprimary);
-}
-
