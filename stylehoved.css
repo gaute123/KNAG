@@ -25,6 +25,16 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
 }
+
+nav ul li:hover{
+    color: var(--KARPEprimary);
+    transform: scale(1.05) translateY(2px);
+    transition: .4s;
+}
+
+nav ul li a:hover{
+    color: var(--KARPEprimary);
+}
 /* section omoss*/
 
 :root {
