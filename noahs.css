@@ -16,6 +16,10 @@ h1, h2, h3, p{
     margin: 10px 0;
 }
 
+h3{
+    text-align: left;
+}
+
 li {
     padding: 5px;
     margin-left: 16px;
