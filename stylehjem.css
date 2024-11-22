@@ -20,7 +20,7 @@ h1 {
 
 h2 {
     text-align: center;
-     -border: solid rgb(255, 255, 255) 3px;
+    color: #ffffff;
     border-radius: 10px;
     font-size: 15px;
 }
@@ -41,7 +41,6 @@ main {
 }
 
 aside {
-
     background-color: rgb(0, 0, 0);
 }
 
