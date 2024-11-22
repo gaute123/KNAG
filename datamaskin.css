@@ -50,6 +50,7 @@ main .boksunderbilde {
 
 main .tekstboks {
     border: 5px solid black;
+    border-radius: 10px;
     background-color: lightgray;
     margin: 5px;
     padding: 20px 30px;
@@ -179,9 +180,7 @@ main .tekstboks:hover ul li {
     */
 }
 
-main .tekstboks:hover {
-    
-}
+
 
 aside .datamaskin-boks {
     background-color:rgb(52, 58, 64) ;
