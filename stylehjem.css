@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 
 img {
     width: 100%;
@@ -26,7 +20,7 @@ h1 {
 
 h2 {
     text-align: center;
-    border: solid rgb(255, 255, 255) 3px;
+     -border: solid rgb(255, 255, 255) 3px;
     border-radius: 10px;
     font-size: 15px;
 }
@@ -37,12 +31,13 @@ p{
 }
 
 body {
-    background-color: #edede9;
+    background-color: rgb(12, 122, 181);
 }
 
 main {
     background-color: rgb(12, 122, 181);
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 aside {
@@ -72,48 +67,6 @@ aside {
     align-items: center;
     justify-content: center;
 }
-/*
-nav {
-    background-color: rgb(255, 255, 255);
-    padding: 0px;
-    text-align: center;
-    border: 2px solid rgb(0, 0, 0);
-    font-size: 20px;
-    width: 100vw;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 0px;
-    margin-bottom: 15px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-}
-
-nav ul {
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    color: black;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-
-}
-
-a:hover {
-    text-decoration: underline;
-    color: rgb(0, 76, 255);
-}
-*/
 
 #boks1 {
     background-image: url("bilder/kommunikasjon8.jpeg");
@@ -195,7 +148,6 @@ a:hover {
 }
 
 .footer-liste h3::before {
-    content: "";
     position: absolute;
     height: 2px;
     width: 50px;
@@ -226,16 +178,3 @@ a:hover {
     color: var(--KARPEprimary);
 }
 
-@media (width > 700px) {
-    body {
-        background-color: rgb(12, 122, 181);
-    }
-
-}
-
-@media (width < 1400px) {
-    body {
-        background-color: #ffffff;
-    }
-
-}
