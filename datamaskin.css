@@ -35,8 +35,71 @@ header .bilde {
 main {
     background-color: black;
 }
+/* Styling Om Datamaskin*/
+
+/* Bakgrunn for hele seksjonen */
+.OmDatamaskin {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.OmDatamaskin-boks {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.OmDatamaskin-boks:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+}
+
+
+.OmDatamaskin-boks img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+
+.OmDatamaskin-boks h3 {
+    font-size: 1.2rem; 
+    color: #333333; 
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+
+.OmDatamaskin-boks p {
+    font-size: 1.1rem; 
+    color: #666666; 
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+    .OmDatamaskin{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
 
 /*Styling om hovedkort*/
+
+
 main .hovedkort-boks {
     padding: 20px;
     background-color: rgb(28, 28, 28);
@@ -61,7 +124,9 @@ main .hovedkort-boks-tekst img {
     display: block;
     border-radius: 20px;
 }
-
+main .hovedkort {
+    margin-top: 100px;
+}
 main .hovedkort h2 {
     text-align: center;
     padding: 10 px;
@@ -82,20 +147,25 @@ main .hovedkort p {
 /*Her er stylingen for komponente*/
 
 main .boksunderbilde {
-    display: flex;
-    justify-content: center;
-    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(28, 28, 28); 
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 main .tekstboks {
-    border: 5px solid black;
-    border-radius: 10px;
-    background-color: lightgray;
-    margin: 5px;
-    padding: 20px 30px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(40, 40, 40); 
+    border: 1px solid rgb(70, 70, 70); 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 @media (max-width: 1550px) and (min-width: 800px) {
@@ -128,11 +198,16 @@ main .divtekst4 {
     -webkit-transition: opacity .3s ease-out;
     -o-transition: opacity .3s ease-out;
 }
+.tekstboks:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
 
 main .divtekst-beskrivelse {
     position: absolute;
     padding: 0px 30px;
     opacity: 0;
+    top: 20px;
 }
 
 .tekstboks:hover .divtekst-beskrivelse {
@@ -153,50 +228,54 @@ main .divtekst5 {
 }
 
 main .tekstboks img {
-    width: 200px;
-    height: 100px;
-    border-radius: 10px;
-}
-
-
-main .tekstboks ul li {
-    /*
-    display: none;
-    list-style: none;
-    */
-}
-
-main .tekstboks:hover ul li {
-    /*
-    display: list-item;
-    color: black;
-    */
-}
-
-
-/*Styling for stasjonær pc-boks*/
-aside .datamaskin-boks {
-    padding: 20px;
-    background-color: rgb(52, 58, 64);
-}
-
-aside .datamaskin-boks-tekst {
-    color: white;
-    border: 3px solid lightgray;
-    border-radius: 20px;
-    margin: auto;
-    width: 50%;
-    padding: 20px;
-    text-align: center;
-}
-
-aside .datamaskin-boks-bilde img {
-    width: 700px;
-    max-width: 100%;
+    max-width: 100px;
     height: auto;
-    margin: 0 auto;
-    display: block;
-    border-radius: 20px;
+    margin-bottom: 15px;
+    filter: brightness(1.2);
+}
+.tekstboks h3 {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 600;
 }
 
-/*Styling for stasjonær pc-boks avsluttes*/
+
+.divtekst-beskrivelse p {
+    font-size: 1rem;
+    color: rgb(200, 200, 200);
+    line-height: 1.5;
+}
+
+aside .bakrunnsfarge{
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+aside  .datamaskin-funksjon-boks {
+    width: 1200px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #666666;
+    margin: 50px 0;
+    
+}
+
+aside .bluetooth {
+    display: flex;
+    margin: 100px 0;
+    gap: 100px;
+    justify-content: center;
+}
+aside .bluetooth-tekst {
+    color: #ffffff;
+    margin: 50px 0;
+}
+aside .bluetooth-tekst h2 {
+    padding-bottom: 20px;
+}
+
+aside .bluetooth img {
+    width: 300px;
+}
