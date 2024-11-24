@@ -77,8 +77,8 @@ aside {
 
 .b2 p {
     display: none;
-    padding: 40px 10px;
-    background-color: rgba(255,255,255, 0.5);
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
 }
 
@@ -91,7 +91,18 @@ aside {
 }
 
 .b4 {
-    background-image: url("bilder/kommunikasjon4.png");
+    background-image: url("bilder/kommunikasjon4.jpeg");
+}
+
+.b4 p {
+    display: none;
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.b4:hover p {
+    display: block;
 }
 
 .b5 {
@@ -115,7 +126,16 @@ aside {
     background-image: url("bilder/kommunikasjon9.jpg");
 }
 
+.b9 p {
+    display: none;
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
 
+.b9:hover p{
+    display: block;
+}
 
 .main {
     display: flex;
