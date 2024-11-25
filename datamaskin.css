@@ -1,3 +1,6 @@
+body {
+    background-color: black;
+}
 /*Her starter header*/
 header h1 {
     padding: 100px;
@@ -40,13 +43,12 @@ main {
 /* Bakgrunn for hele seksjonen */
 .OmDatamaskin {
     display: grid;
+    max-width: 1200px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     gap: 20px;
     padding: 20px;
     background-color: #f9f9f9;
-    width: 100%;
-    max-width: 100%;
     margin: 0 auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -95,6 +97,15 @@ main {
         grid-template-columns: 1fr;
         gap: 20px;
     }
+
+    ul.funksjon-liste {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    ul.funksjon-liste li h3 {
+        height: auto;
+    }
 }
 
 /*Styling om hovedkort*/
@@ -126,6 +137,8 @@ main .hovedkort-boks-tekst img {
 }
 main .hovedkort {
     margin-top: 100px;
+    max-width: 1200px;
+    margin: 100px auto;
 }
 main .hovedkort h2 {
     text-align: center;
@@ -139,8 +152,7 @@ main .hovedkort h2 {
 main .hovedkort p {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    
     color: white;
 }
 
@@ -148,11 +160,11 @@ main .hovedkort p {
 
 main .boksunderbilde {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
     background-color: rgb(28, 28, 28); 
-    margin: 0 auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -246,6 +258,8 @@ main .tekstboks img {
     color: rgb(200, 200, 200);
     line-height: 1.5;
 }
+aside {
+}
 
 aside .bakrunnsfarge{
     background-color: #222;
@@ -257,9 +271,51 @@ aside  .datamaskin-funksjon-boks {
     width: 1200px;
     padding: 30px;
     border-radius: 20px;
-    background-color: #666666;
-    margin: 50px 0;
-    
+    background-color: white;
+    margin: 50px 0;   
+}
+
+aside  .datamaskin-funksjon-boks h2 {
+    text-align: center;
+}
+
+.funksjon-liste {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    position: relative;
+}
+/*
+.funksjon-liste::after {
+    content: "";
+    position: absolute;
+    bottom: 45px;
+    height: 0px;
+    width: 100%;
+    border: 1px solid black;
+}
+*/
+.funksjon-liste li {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.funksjon-liste li h3 {
+    height: 90px;
+}
+
+.funksjon-liste li p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.funksjon-liste-bilde {
+    margin-top: 10px;
+}
+.funksjon-liste-bilde img {
+    height: 80px;
 }
 
 aside .bluetooth {

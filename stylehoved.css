@@ -52,11 +52,16 @@ nav ul li a:hover{
 
 #footerid {
     background-color: var(--primary);
+    padding: 20px;
 }
 
 .main-footer {
     display: flex;
     flex-wrap: wrap;
+}
+
+.main-footer ul {
+    margin-left: 20px;
 }
 
 .footer {
