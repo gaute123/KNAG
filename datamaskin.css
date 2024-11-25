@@ -160,7 +160,6 @@ main .hovedkort p {
 
 main .boksunderbilde {
     display: grid;
-    /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));*/
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
@@ -258,6 +257,8 @@ main .tekstboks img {
     color: rgb(200, 200, 200);
     line-height: 1.5;
 }
+
+/*Her avsluttes styling i main*/
 aside {
 }
 
